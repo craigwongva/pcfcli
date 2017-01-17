@@ -1,10 +1,10 @@
 {
 "AWSTemplateFormatVersion": "2010-09-09",
-"Description": "uses vanilla Amazon Linux AMI (ami-7172b611)",
+"Description": "uses vanilla Amazon Linux AMI (ami-9be6f38c)",
 
 "Mappings": {
   "EC2RegionMap": {
-   "us-west-2": {"craiggoami": "ami-7172b611"}
+   "us-west-2": {"amazonlinuxami": "ami-9be6f38c"}
   }
 },
 "Resources": {
@@ -12,15 +12,15 @@
    "Type": "AWS::EC2::Instance",
    "Properties": {
     "Tags" : [{
-     "Key":"craig-go-component",
-     "Value":"craig-go"
+     "Key":"craig-component",
+     "Value":"craig"
     }],
     "ImageId": {
      "Fn::FindInMap": [
       "EC2RegionMap", {
        "Ref": "AWS::Region"
       },
-      "craiggoami"
+      "amazonlinuxami"
      ]
     },
     "InstanceType": "t2.micro",
