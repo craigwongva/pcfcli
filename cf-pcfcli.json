@@ -1,10 +1,10 @@
 {
 "AWSTemplateFormatVersion": "2010-09-09",
-"Description": "uses vanilla Amazon Linux AMI (ami-9be6f38c)",
+"Description": "uses vanilla Amazon Linux AMI",
 
 "Mappings": {
   "EC2RegionMap": {
-   "us-west-2": {"amazonlinuxami": "ami-9be6f38c"}
+   "us-west-2": {"amazonlinuxami": "ami-1e299d7e"}
   }
 },
 "Resources": {
