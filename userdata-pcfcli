@@ -1,0 +1,4 @@
+wget "https://cli.run.pivotal.io/stable?release=linux64-binary&version=6.21.1&source=github-rel" -O foo
+tar zxvf foo #creates the executable “cf”
+rm foo
+chmod 755 cf
